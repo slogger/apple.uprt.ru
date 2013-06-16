@@ -2,7 +2,7 @@ var app = angular
 	.module('uprt', [])
 	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	  $routeProvider.
-	    when('#', {
+	    when('/', {
 	      templateUrl:'views/downloadImage.html', 
 	      controller:'DownloadCtrl'
 	    }).
