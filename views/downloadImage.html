@@ -1,0 +1,48 @@
+﻿<div class="span3 offset2">
+	<span class="btn btn-large btn-success fileinput-button">
+      <i class="icon-plus icon-white"></i>
+      <span>{{btnText}}</span>
+      <input type="file" id="files" name="files[]" accept="image/jpeg,image/png,image/gif"/> 
+  </span>
+</div>
+
+<script>
+	angular.element(document).ready(function(){
+		localStorage.clear()
+	})
+	function handleFileSelect(evt) {
+		var files = evt.target.files;
+			for (var i = 0, f; f = files[i]; i++) {
+				if (!f.type.match('image.*')) {
+					continue;
+				}
+				var reader = new FileReader();
+				reader.onload = function(file) {
+						localStorage.setItem('img', file.target.result);
+				};
+				reader.readAsDataURL(f);
+				window.location.href="#process";
+			};
+	}
+
+function getBase64(url) {
+    var image = new Image();
+    image.setAttribute('crossOrigin','anonymous');
+    image.src = url;
+    image.onload = function() {
+	    var canvas = document.createElement("canvas");
+	    canvas.width = image.width;
+	    canvas.height = image.height;
+	    var ctx = canvas.getContext("2d");
+	    ctx.drawImage(image, 0, 0);
+	    var dataURL = canvas.toDataURL();
+	    localStorage.setItem('img', dataURL);
+  	};
+    // window.location.href="#process";
+}
+
+	document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+
+</script>
+
