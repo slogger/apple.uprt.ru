@@ -22,7 +22,7 @@ angular
 function MainCtrl ($scope) {
 	$scope.model = {
 		title: "APPLE.UPRT.RU",
-		footer: "Дезигн ис симпле! Все прова защищины. Мыло длия связи: slogger@uprt.ru",
+		footer: "Дезигн ис симпле! Аппле.упрт.ру (с) Алл ригтх ресервед. Майл то коннект: slogger@uprt.ru",
 	}
 }
 
