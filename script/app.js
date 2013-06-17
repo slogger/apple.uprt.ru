@@ -1,5 +1,5 @@
-var app = angular
-	.module('uprt', [])
+angular
+	.module('apple.uprt', [])
 	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	  $routeProvider.
 	    when('/', {
@@ -20,13 +20,20 @@ var app = angular
 	  }]);
 
 function MainCtrl ($scope) {
-	$scope.title = "APPLE.UPRT.RU";
-	$scope.footer = "Дезигн ис симпле";
+	$scope.model = {
+		title: "APPLE.UPRT.RU",
+		footer: "Дезигн ис симпле",
+	}
 }
 
 function DownloadCtrl ($scope) {
 	$scope.btnText = "Загрузите фотографию";
+	$scope.desc =  "На WWDC 2013 была представлена iOS7. её главной особенностью стали градиенты, так захуячь градиент и себя, не будь лохом.";
+
 }
 function cropCtrl ($scope) {
-	$scope.btnText = "Далее";
+	$scope.btn = {
+		next: "Далее",
+		back: "Назад"
+	}
 }

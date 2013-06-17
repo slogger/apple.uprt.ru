@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" ng-app="uprt" ng-controller="MainCtrl">
+<html lang="ru" ng-app="apple.uprt" ng-controller="MainCtrl">
   <head>
     <meta charset="utf-8">
     <title>UPRT.RU &middot; iOS7</title>
@@ -27,8 +27,9 @@
 
       <div class="container">
         <div class="page-header">
-          <h1><a href="/">{{title}}</a></h1>
+          <h1><a href="/">{{model.title}}</a></h1>
         </div>
+        
         <ng:view></ng:view>
       </div>
 
@@ -50,8 +51,7 @@
             src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
           </script>
         </div>    
-        <p class="muted credit">{{footer}}</p>
-
+        <p class="muted credit">{{model.footer}}</p>
       </div>
     </footer> 
     <script src="static/js/angular.min.js"></script>
