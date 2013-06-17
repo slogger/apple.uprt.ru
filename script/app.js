@@ -28,7 +28,7 @@ function MainCtrl ($scope) {
 
 function DownloadCtrl ($scope) {
 	$scope.btnText = "Загрузите фотографию";
-	$scope.desc =  "Зафигачь градиент, не будь лалкой.";
+	$scope.desc =  "Айвизируй свою аватарку по полному!";
 
 }
 function cropCtrl ($scope) {
