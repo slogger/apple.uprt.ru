@@ -22,7 +22,7 @@ angular
 function MainCtrl ($scope) {
 	$scope.model = {
 		title: "APPLE.UPRT.RU",
-		footer: "Дезигн ис симпле",
+		footer: "Десигн иp симпл",
 	}
 }
 
