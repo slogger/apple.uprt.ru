@@ -28,7 +28,7 @@ function MainCtrl ($scope) {
 
 function DownloadCtrl ($scope) {
 	$scope.btnText = "Загрузите фотографию";
-	$scope.desc =  "На WWDC 2013 была представлена iOS7. её главной особенностью стали градиенты, так захуячь градиент и себя, не будь лохом.";
+	$scope.desc =  "Захуячь градиент, не будь лалкой.";
 
 }
 function cropCtrl ($scope) {
