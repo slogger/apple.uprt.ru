@@ -28,7 +28,7 @@ function MainCtrl ($scope) {
 
 function DownloadCtrl ($scope) {
 	$scope.btnText = "Загрузите фотографию";
-	$scope.desc =  "Захуячь градиент, не будь лалкой.";
+	$scope.desc =  "Зафигачь градиент, не будь лалкой.";
 
 }
 function cropCtrl ($scope) {
